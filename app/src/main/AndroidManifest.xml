@@ -10,11 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileUdeA">
         <activity
-            android:name=".Detalle"
-            android:exported="true"
-            android:label="@string/title_activity_detalle"
-            android:theme="@style/Theme.MobileUdeA.NoActionBar" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
