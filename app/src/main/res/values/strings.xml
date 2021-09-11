@@ -1,12 +1,9 @@
 <resources>
     <string name="app_name">MobileUdeA</string>
-    <string name="title_activity_detalle">Detalle</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="MainActivity">Detalle</string>
+    <string name="city">Guatapé - El Peñol</string>
+    <string name="descripcion1">Guatapé es un municipio de Colombia, localizado en la subregión Oriente del departamento de Antioquia. Se encuentra a 79 kilómetros de la ciudad de Medellín, capital del departamento de Antioquia. El municipio posee una extensión de 76 kilómetros cuadrados.
+    Es conocido principalmente con dos apelativos que son: Paraíso turístico de Antioquia y Pueblo de Zócalos, también es conocido como el Embalse Peñol-Guatapé, el mayor de Colombia.</string>
+    <string name="descripcion2">Origen del nombre: Fue llamado así en honor al cacique Guatapé. Las fachadas de sus casas son coloridas, adornadas con tradicionales zócalos, como la calle del Recuerdo. El Parque Principal es amplio e invita a caminar, el malecón ofrece, además de una variada oferta gastronómica, una apacible vista sobre el embalse y el Peñón de Guatapé le da una de las mayores atracciones a este lugar: un pueblo entre montañas a orillas de un pequeño mar.</string>
+    <string name="textoboton">Leer Más</string>
 </resources>
