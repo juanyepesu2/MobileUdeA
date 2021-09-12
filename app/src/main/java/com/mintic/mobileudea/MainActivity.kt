@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val boton: Button = findViewById(R.id.ver_mas)
         val descripcion2: TextView = findViewById(R.id.description2)
-        var estadoboton: Boolean = true
+        var estadoboton: Boolean = false
 
          boton.setOnClickListener{
             if (estadoboton == true) {
