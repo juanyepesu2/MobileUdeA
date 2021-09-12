@@ -10,6 +10,9 @@
         <entry key="..\:/TIC2022 - Ciclo 4/Apps/MobileUdeA/app/src/main/res/layout/content_detalle.xml" value="0.1" />
         <entry key="..\:/TIC2022 - Ciclo 4/Apps/MobileUdeA/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17777777777777778" />
         <entry key="..\:/TIC2022 - Ciclo 4/Apps/MobileUdeA/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17777777777777778" />
+        <entry key="app/src/main/res/layout-v26/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_sitio.xml" value="0.19322916666666667" />
       </map>
     </option>
   </component>
