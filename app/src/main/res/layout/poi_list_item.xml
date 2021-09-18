@@ -23,50 +23,67 @@
     android:background="?android:attr/selectableItemBackground">
 
 
+    <ImageView
+        android:id="@+id/imageview_thumb"
+        android:layout_width="@dimen/thumbnail_size"
+        android:layout_height="@dimen/thumbnail_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_baseline_location_on_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_launcher" />
+
     <TextView
         android:id="@+id/textview_poi_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="?android:attr/textColorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textview_poi_raiting"
+        app:layout_constraintLeft_toRightOf="@+id/imageview_thumb"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Poi Name" />
+        tools:text="Contact Name" />
 
     <TextView
         android:id="@+id/textview_poi_raiting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:ellipsize="end"
         android:maxLines="1"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="?android:attr/textColorSecondary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/textview_poi_name"
-        app:layout_constraintTop_toBottomOf="@+id/textview_poi_name"
-        app:layout_constraintVertical_bias="0.173"
-        tools:text="raiting" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/textview_poi_description"
+        app:layout_constraintLeft_toRightOf="@+id/imageview_thumb"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Contact Name" />
 
     <TextView
         android:id="@+id/textview_poi_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:ellipsize="end"
         android:maxLines="1"
+        tools:text="test@email.com"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="?android:attr/textColorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/textview_poi_raiting"
-        app:layout_constraintTop_toBottomOf="@+id/textview_poi_raiting"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="Poi Description" />
+        app:layout_constraintLeft_toRightOf="@+id/imageview_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/textview_poi_raiting" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
