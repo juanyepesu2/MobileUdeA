@@ -14,8 +14,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,66 +23,64 @@
 
 
     <ImageView
-        android:id="@+id/imageview_thumb"
+        android:id="@+id/poi_image"
         android:layout_width="@dimen/thumbnail_size"
         android:layout_height="@dimen/thumbnail_size"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/ic_baseline_location_on_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:src="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/textview_poi_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="?android:attr/textColorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/textview_poi_raiting"
-        app:layout_constraintLeft_toRightOf="@+id/imageview_thumb"
+        app:layout_constraintBottom_toTopOf="@+id/textview_poi_rating"
+        app:layout_constraintStart_toEndOf="@+id/poi_image"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Contact Name" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Destino" />
 
     <TextView
-        android:id="@+id/textview_poi_raiting"
+        android:id="@+id/textview_poi_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="?android:attr/textColorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/textview_poi_description"
-        app:layout_constraintLeft_toRightOf="@+id/imageview_thumb"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Contact Name" />
+        tools:text="Calificación" />
 
     <TextView
         android:id="@+id/textview_poi_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="252dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
         android:ellipsize="end"
-        android:maxLines="1"
-        tools:text="test@email.com"
+        android:maxLines="2"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="?android:attr/textColorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/imageview_thumb"
-        app:layout_constraintTop_toBottomOf="@+id/textview_poi_raiting" />
-
-
-
-
+        app:layout_constraintStart_toEndOf="@+id/poi_image"
+        app:layout_constraintTop_toBottomOf="@+id/textview_poi_name"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Descripción" />
 </androidx.constraintlayout.widget.ConstraintLayout>

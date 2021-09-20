@@ -19,11 +19,9 @@ class PoiList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_poi_list)
-
         recycler = findViewById(R.id.poi_list)
         setupRecyclerView()
         generateContacts()
-//        mContacts = createMockContacts()
     }
 
     /**
@@ -54,12 +52,12 @@ class PoiList : AppCompatActivity() {
                 val poi = Poi(
                     contactJson.getString("poi_name"),
                     contactJson.getString("poi_description"),
-                    contactJson.getString("poi_raiting")
+                    contactJson.getString("poi_rating"),
+                    contactJson.getString("poi_image")
                 )
                 Log.d(TAG, "generatePoi: $poi")
                 mPoi.add(poi)
             }
-
             mAdapter.notifyDataSetChanged()
         } catch (e: JSONException) {
             e.printStackTrace()
@@ -79,22 +77,11 @@ class PoiList : AppCompatActivity() {
             val buffer = ByteArray(size)
             inputStream.read(buffer)
             inputStream.close()
-
             poiString = String(buffer)
         } catch (e: IOException) {
             e.printStackTrace()
         }
-
         return poiString
-    }
-
-    private fun createMockContacts(): ArrayList<Poi> {
-        return arrayListOf(
-            Poi("Jose", "Perez", "jose@gmail.com"),
-            Poi("Jose", "Perez", "jose@gmail.com"),
-            Poi("Jose", "Perez", "jose@gmail.com"),
-            Poi("Juan", "Perez", "juan@gmail.com")
-        )
     }
 
     companion object {
