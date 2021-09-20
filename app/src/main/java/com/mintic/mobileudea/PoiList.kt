@@ -54,7 +54,7 @@ class PoiList : AppCompatActivity() {
                 val poi = Poi(
                     contactJson.getString("poi_name"),
                     contactJson.getString("poi_description"),
-                    contactJson.getString("poi_raiting")
+                    contactJson.getString("poi_rating")
                 )
                 Log.d(TAG, "generatePoi: $poi")
                 mPoi.add(poi)

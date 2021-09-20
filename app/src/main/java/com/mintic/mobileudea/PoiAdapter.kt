@@ -30,7 +30,7 @@ class PoiAdapter(
         val (poi_name, poi_description, poi_rating) = mPoi[position]
         holder.poi_nameLabel.text = poi_name
         holder.poi_descriptionLabel.text = poi_description
-        holder.poi_raitingLabel.text = poi_rating
+        holder.poi_ratingLabel.text = poi_rating
         // Esa formula es una transformación lineal para que si el rating del POI es
         // 5 se complete toda la estrella (1); y si es 1, no se complete nada.
         holder.poi_ratingBar.rating = (poi_rating.toFloat() - 1) / 4
@@ -43,12 +43,10 @@ class PoiAdapter(
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var poi_nameLabel: TextView = itemView.findViewById(R.id.textview_poi_name)
-        var poi_raitingLabel: TextView = itemView.findViewById(R.id.textview_poi_raiting)
+        var poi_ratingLabel: TextView = itemView.findViewById(R.id.textview_poi_raiting)
         var poi_descriptionLabel: TextView = itemView.findViewById(R.id.textview_poi_description)
         var poi_ratingBar: RatingBar = itemView.findViewById(R.id.ratingBar)
         var poi_image: ImageView = itemView.findViewById(R.id.imageview_thumb)
     }
-
-    // Para cargar las imagenes en el RecyclerView:
 
 }
