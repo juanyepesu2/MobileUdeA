@@ -1,7 +1,9 @@
 package com.mintic.mobileudea
+import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import java.util.ArrayList
@@ -16,7 +18,8 @@ class PoiAdapter (
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val (poi_name, poi_description, poi_raiting) = mPoi[position]
+        val (poi_name, poi_description, poi_raiting, poi_image) = mPoi[position]
+        holder.poi_image.setImageResource(poi_image)
         holder.poi_nameLabel.text=poi_name
         holder.poi_descriptionLabel.text=poi_description
         holder.poi_raitingLabel.text=poi_raiting
@@ -27,6 +30,7 @@ class PoiAdapter (
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var poi_image: ImageView = itemView.findViewById(R.id.poi_image)
         var poi_nameLabel: TextView = itemView.findViewById(R.id.textview_poi_name)
         var poi_raitingLabel: TextView = itemView.findViewById(R.id.textview_poi_raiting)
         var poi_descriptionLabel: TextView = itemView.findViewById(R.id.textview_poi_description)

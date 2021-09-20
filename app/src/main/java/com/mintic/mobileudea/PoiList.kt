@@ -19,13 +19,10 @@ class PoiList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_poi_list)
-
         recycler = findViewById(R.id.poi_list)
         setupRecyclerView()
         generateContacts()
-//        mContacts = createMockContacts()
     }
-
     /**
      * Sets up the RecyclerView: empty data set, item dividers, swipe to delete.
      */
@@ -40,7 +37,6 @@ class PoiList : AppCompatActivity() {
         mAdapter = PoiAdapter(mPoi)
         recycler.adapter = mAdapter
     }
-
     /**
      * Generates mock contact data to populate the UI from a JSON file in the
      * assets directory, called from the options menu.
@@ -54,18 +50,17 @@ class PoiList : AppCompatActivity() {
                 val poi = Poi(
                     contactJson.getString("poi_name"),
                     contactJson.getString("poi_description"),
-                    contactJson.getString("poi_raiting")
+                    contactJson.getString("poi_raiting"),
+                    contactJson.getString("poi_image")
                 )
                 Log.d(TAG, "generatePoi: $poi")
                 mPoi.add(poi)
             }
-
             mAdapter.notifyDataSetChanged()
         } catch (e: JSONException) {
             e.printStackTrace()
         }
     }
-
     /**
      * Reads a file from the assets directory and returns it as a string.
      *
@@ -79,24 +74,12 @@ class PoiList : AppCompatActivity() {
             val buffer = ByteArray(size)
             inputStream.read(buffer)
             inputStream.close()
-
             poiString = String(buffer)
         } catch (e: IOException) {
             e.printStackTrace()
         }
-
         return poiString
     }
-
-    private fun createMockContacts(): ArrayList<Poi> {
-        return arrayListOf(
-            Poi("Jose", "Perez", "jose@gmail.com"),
-            Poi("Jose", "Perez", "jose@gmail.com"),
-            Poi("Jose", "Perez", "jose@gmail.com"),
-            Poi("Juan", "Perez", "juan@gmail.com")
-        )
-    }
-
     companion object {
         private val TAG = PoiList::class.java.simpleName
     }
