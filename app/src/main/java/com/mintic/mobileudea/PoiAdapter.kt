@@ -38,4 +38,7 @@ class PoiAdapter(
         var poi_descriptionLabel: TextView = itemView.findViewById(R.id.textview_poi_description)
         var poi_ratingBar: RatingBar = itemView.findViewById(R.id.ratingBar)
     }
+
+    // Para cargar las imagenes en el RecyclerView:
+
 }
