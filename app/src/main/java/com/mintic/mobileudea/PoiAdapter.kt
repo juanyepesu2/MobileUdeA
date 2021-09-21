@@ -12,6 +12,7 @@ import java.util.ArrayList
 
 class PoiAdapter(
     private val mPoi: ArrayList<Poi>
+
 ) : RecyclerView.Adapter<PoiAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,6 +28,7 @@ class PoiAdapter(
         holder.poi_ratingLabel.text = poi_rating
         Picasso.get().load(poi_url_image).into(holder.poi_imagecity)
         holder.poi_ratingBar.rating = (poi_rating.toFloat() - 1) / 4
+        holder.poi_image.setImageResource(mPoiImage[position])
     }
 
     override fun getItemCount(): Int {
@@ -39,9 +41,7 @@ class PoiAdapter(
         var poi_descriptionLabel: TextView = itemView.findViewById(R.id.textview_poi_description)
         var poi_imagecity: ImageView = itemView.findViewById(R.id.poi_image)
         var poi_ratingBar: RatingBar = itemView.findViewById(R.id.ratingBar)
+        var poi_image: ImageView = itemView.findViewById(R.id.imageview_thumb)
     }
+
 }
-
-
-
-
