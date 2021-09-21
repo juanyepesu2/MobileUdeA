@@ -1,20 +1,74 @@
 [
   {
     "poi_name": "Guatapé",
-    "poi_description": "Sitio turístico colombiano",
-    "poi_raiting": "5",
-    "poi_image": "kwickliffe0@orciconsectetuer.com"
+    "poi_description": "Piedra del Peñol y represa de Guatapé, Antioquia - Colombia",
+    "poi_rating": "5.0",
+    "poi_image": "https://media.wsimag.com/attachments/49319d1f2192568285d62eecacfe806991e59cee/store/fill/1090/613/8a34ea8b6a83a846881e90dcfdcceb81cb7d65b7aed60a1f0bae1c45deba/La-Piedra-del-Penon-de-Guatape-al-fondo.jpg"
   },
   {
     "poi_name": "Santa Rosa",
-    "poi_description": "Sitio turístico colombiano",
-    "poi_raiting": "4",
-    "poi_image": "kwickliffe0@orciconsectetuer.com"
+    "poi_description": "Termales de Santa Rosa de cabal, Risaralda -Colombia ",
+    "poi_rating": "4.0",
+    "poi_image": "https://termales.com.co/wp-content/uploads/2021/04/conoce-mas-home.jpg"
   },
   {
     "poi_name": "El Valle del Cocora",
-    "poi_description": "Sitio turístico colombiano",
-    "poi_raiting": "3",
-    "poi_image": "kwickliffe0@orciconsectetuer.com"
+    "poi_description": "Paisaje natural localizado en Salento, Quindío - Colombia ",
+    "poi_rating": "3.0",
+    "poi_image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/a4/6b.jpg"
+  },
+  {
+    "poi_name": "Santa Fe de Antioquia",
+    "poi_description": "Pueblo colonial cerca de Medellin, Antioquia - Colombia",
+    "poi_rating": "4.0",
+    "poi_image": "https://www.turismoenmedellin.com/images/galeria/imagen_id_14008.webp"
+  },
+  {
+    "poi_name": "Cabo de la Vela",
+    "poi_description": "La alta Guajira, cuna de los Wayú, Guajira -Colombia ",
+    "poi_rating": "5.0",
+    "poi_image": "https://www.uniquecolombia.com/wp-content/uploads/2011/10/CABODE-LA-VELA.jpg"
+  },
+  {
+    "poi_name": "Bahía de Solano",
+    "poi_description": "La puerta del pacífico - Avistamiento de ballenas, Choco - Colombia ",
+    "poi_rating": "3.0",
+    "poi_image": "https://aktivo.com.co/wp-content/uploads/2021/06/avistamiento-de-ballenas-colombia-800x600-1.jpg"
+  },
+  {
+    "poi_name": "Guatapé",
+    "poi_description": "Piedra del Peñol y represa de Guatapé, Antioquia - Colombia",
+    "poi_rating": "5.0",
+    "poi_image": "https://media.wsimag.com/attachments/49319d1f2192568285d62eecacfe806991e59cee/store/fill/1090/613/8a34ea8b6a83a846881e90dcfdcceb81cb7d65b7aed60a1f0bae1c45deba/La-Piedra-del-Penon-de-Guatape-al-fondo.jpg"
+  },
+  {
+    "poi_name": "Santa Rosa",
+    "poi_description": "Termales de Santa Rosa de cabal, Risaralda -Colombia ",
+    "poi_rating": "4.0",
+    "poi_image": "https://termales.com.co/wp-content/uploads/2021/04/conoce-mas-home.jpg"
+  },
+  {
+    "poi_name": "El Valle del Cocora",
+    "poi_description": "Paisaje natural localizado en Salento, Quindío - Colombia ",
+    "poi_rating": "3.0",
+    "poi_image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/a4/6b.jpg"
+  },
+  {
+    "poi_name": "Guatapé",
+    "poi_description": "Piedra del Peñol y represa de Guatapé, Antioquia - Colombia",
+    "poi_rating": "5.0",
+    "poi_image": "https://media.wsimag.com/attachments/49319d1f2192568285d62eecacfe806991e59cee/store/fill/1090/613/8a34ea8b6a83a846881e90dcfdcceb81cb7d65b7aed60a1f0bae1c45deba/La-Piedra-del-Penon-de-Guatape-al-fondo.jpg"
+  },
+  {
+    "poi_name": "Santa Rosa",
+    "poi_description": "Termales de Santa Rosa de cabal, Risaralda -Colombia ",
+    "poi_rating": "4.0",
+    "poi_image": "https://termales.com.co/wp-content/uploads/2021/04/conoce-mas-home.jpg"
+  },
+  {
+    "poi_name": "El Valle del Cocora",
+    "poi_description": "Paisaje natural localizado en Salento, Quindío - Colombia ",
+    "poi_rating": "3.0",
+    "poi_image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/a4/6b.jpg"
   }
 ]

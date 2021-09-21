@@ -23,7 +23,7 @@
 
 
     <ImageView
-        android:id="@+id/imageview_thumb"
+        android:id="@+id/poi_image"
         android:layout_width="@dimen/thumbnail_size"
         android:layout_height="@dimen/thumbnail_size"
         android:layout_marginStart="16dp"
@@ -33,7 +33,9 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_baseline_location_on_24"
         tools:src="@mipmap/ic_launcher" />
 
@@ -41,51 +43,48 @@
         android:id="@+id/textview_poi_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="?android:attr/textColorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/textview_poi_raiting"
-        app:layout_constraintLeft_toRightOf="@+id/imageview_thumb"
-        app:layout_constraintStart_toEndOf="@+id/imageview_thumb"
+        app:layout_constraintBottom_toTopOf="@+id/textview_poi_rating"
+        app:layout_constraintStart_toEndOf="@+id/poi_image"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="textview_poi_name" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Destino" />
 
     <TextView
-        android:id="@+id/textview_poi_raiting"
-        android:layout_width="51dp"
+        android:id="@+id/textview_poi_rating"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="?android:attr/textColorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ratingBar"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Rating" />
+        tools:text="Calificación" />
 
     <TextView
         android:id="@+id/textview_poi_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="252dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:ellipsize="end"
-        android:maxLines="1"
+        android:maxLines="2"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="?android:attr/textColorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/imageview_thumb"
-        app:layout_constraintStart_toEndOf="@+id/imageview_thumb"
+        app:layout_constraintStart_toEndOf="@+id/poi_image"
         app:layout_constraintTop_toBottomOf="@+id/textview_poi_name"
-        tools:text="textview_poi_description" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Descripción" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -97,12 +96,11 @@
         android:rating="3.5"
         android:stepSize="0.1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textview_poi_raiting"
+        app:layout_constraintEnd_toStartOf="@+id/textview_poi_rating"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.508"
         tools:ignore="SpeakableTextPresentCheck" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
