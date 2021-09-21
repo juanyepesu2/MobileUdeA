@@ -1,15 +1,12 @@
 package com.mintic.mobileudea
 
-import android.icu.number.NumberRangeFormatter.with
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.mintic.mobileudea.databinding.ActivityPoiListBinding
-import com.mintic.mobileudea.databinding.PoiListItemBinding
 import com.squareup.picasso.Picasso
 import java.util.ArrayList
 
@@ -29,6 +26,7 @@ class PoiAdapter(
         holder.poi_descriptionLabel.text = poi_description
         holder.poi_ratingLabel.text = poi_rating
         Picasso.get().load(poi_url_image).into(holder.poi_imagecity)
+        holder.poi_ratingBar.rating = (poi_rating.toFloat() - 1) / 4
     }
 
     override fun getItemCount(): Int {
@@ -40,6 +38,7 @@ class PoiAdapter(
         var poi_ratingLabel: TextView = itemView.findViewById(R.id.textview_poi_rating)
         var poi_descriptionLabel: TextView = itemView.findViewById(R.id.textview_poi_description)
         var poi_imagecity: ImageView = itemView.findViewById(R.id.poi_image)
+        var poi_ratingBar: RatingBar = itemView.findViewById(R.id.ratingBar)
     }
 }
 
