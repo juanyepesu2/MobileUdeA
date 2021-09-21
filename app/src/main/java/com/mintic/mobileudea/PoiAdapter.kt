@@ -28,7 +28,6 @@ class PoiAdapter(
         holder.poi_ratingLabel.text = poi_rating
         Picasso.get().load(poi_url_image).into(holder.poi_imagecity)
         holder.poi_ratingBar.rating = (poi_rating.toFloat() - 1) / 4
-        holder.poi_image.setImageResource(mPoiImage[position])
     }
 
     override fun getItemCount(): Int {
