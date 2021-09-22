@@ -21,6 +21,8 @@
         <entry key="..\:/TIC2022 - Ciclo 4/Apps/MobileUdeA/app/src/main/res/layout/content_detalle.xml" value="0.1" />
         <entry key="..\:/TIC2022 - Ciclo 4/Apps/MobileUdeA/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17777777777777778" />
         <entry key="..\:/TIC2022 - Ciclo 4/Apps/MobileUdeA/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17777777777777778" />
+        <entry key="app/src/main/res/layout/activity_poi_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/poi_list_item.xml" value="0.33" />
       </map>
     </option>
   </component>
