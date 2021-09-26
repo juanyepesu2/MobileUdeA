@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mintic.mobileudea">
 
-    <uses-permission android:name="android.permission.INTERNET">
-    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -13,16 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileUdeA">
         <activity
+            android:name=".PoiList"
+            android:exported="true" />
+        <activity
             android:name=".Testing"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".PoiDetails"
             android:exported="true" />
         <activity
-            android:name=".PoiList"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

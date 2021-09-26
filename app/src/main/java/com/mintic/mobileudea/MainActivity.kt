@@ -9,34 +9,32 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.navigation.navArgs
 import com.mintic.mobileudea.databinding.ActivityMainBinding
+import com.mintic.mobileudea.databinding.FragmentPoiListBinding
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomappbar.BottomAppBar
+
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        @Suppress("UNUSED_VARIABLE")
+        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-        binding.button2.setOnClickListener{
-        }
+        navController = this.findNavController(R.id.poiListFragment)
 
-        val boton: Button = findViewById(R.id.ver_mas)
-        val descripcion2: TextView = findViewById(R.id.description2)
-        descripcion2.isVisible = false
-        var estadoboton: Boolean = true
-        boton.setOnClickListener {
-            if (estadoboton == true) {
-                boton.setText("Leer Menos")
-                descripcion2.isVisible = true
-                estadoboton = false
-            } else {
-                boton.setText("Leer Más")
-                estadoboton = true
-                descripcion2.isVisible = false
-            }
-        }
+        NavigationUI.setupActionBarWithNavController(this, navController)
     }
-}
+
+
+    //Initialize the bottom navigation view
+        //create bottom navigation view object
+
+    }
+
