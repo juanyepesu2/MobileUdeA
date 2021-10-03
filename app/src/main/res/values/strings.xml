@@ -1,29 +1,56 @@
 <resources>
     <string name="app_name">MobileUdeA</string>
     <string name="MainActivity">Detalle</string>
-    <string name="city">Guatapé - El Peñol</string>
-    <string name="descripcion1">Guatapé es un municipio de Colombia, localizado en la subregión Oriente del departamento de Antioquia. Se encuentra a 79 kilómetros de la ciudad de Medellín. El municipio posee una extensión de 76 Km2.
-    Es conocido como el Paraíso turístico de Antioquia y Pueblo de Zócalos, también es conocido como el Embalse Peñol-Guatapé, el mayor de Colombia.</string>
-    <string name="descripcion2">Origen del nombre: Fue llamado así en honor al cacique Guatapé. Las fachadas de sus casas son coloridas, adornadas con tradicionales zócalos. El Parque Principal es amplio e invita a caminar, el malecón ofrece, además de una variada oferta gastronómica, una apacible vista sobre el embalse y el Peñón de Guatapé que le da una de las mayores atracciones a este lugar: un pueblo entre montañas a orillas de un pequeño mar.</string>
-    <string name="textoboton">Leer Menos</string>
-    <string name="recomendados">Sitios Recomendados</string>
+    <string name="name_pois">Guatapé - El Peñol</string>
+    <string name="description_poi_1">Descripción del sitio turístico.</string>
+    <string name="description_poi_2">Ampliación de la descripción.</string>
+    <string name="textbotton_vermas">Leer Más</string>
+    <string name="recommended">Sitios Recomendados</string>
     <string name="ubicacion">Ubicación</string>
-    <string name="localizacion">Colombia, departamento de Antioquia</string>
-    <string name="temperatura">Temperatura</string>
-    <string name="grados">22°C en promedio</string>
-    <string name="mapa">Ver en mapa</string>
-    <string name="mas_info">Más info</string>
-    <string name="lista">
-        <br> • Iglesia parroquial de Nuestra Señora del Carmen. \n</br>
-        <br> • Capilla de Nuestra Señora de Santa Ana. \n</br>
-        <br> • Monasterio de los Monjes Benedictinos. \n</br>
-        <br> • Museo Histórico Comunitario. \n</br>
-        <br> • Calle del Recuerdo. \n</br>
-        <br> • Museo del Zócalo. \n</br>
-        <br> • Piedra del Peñol o Peñón de Guatapé. \n</br>
-        <br> • Parque recreativo la Culebra. \n</br>
-        <br> • Parque Místico Guatapé.\n</br>
-        <br> • Malecón - Navegación y pesca en la represa \n</br>
-</string>
+    <string name="localization">Localización</string>
+    <string name="temperature">Temperatura</string>
+    <string name="degrees">Temperatura Promedio</string>
+    <string name="map">Ver en mapa</string>
+    <string name="info">Más info</string>
+    <string name="list_places"> Sitios de interes</string>
     <string name="Poi_image">Poi_image</string>
+    <string name="Poi_name">Destino</string>
+    <string name="Poi_score">Calificación</string>
+    <string name="Poi_description">Descripción</string>
+    <string name="name_app_ini">Backpacker</string>
+    <string name="list">Destinos</string>
+    <string name="settings">Ajustes</string>
+    <string name="ini">Backpack</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Acerca de</string>
+    <string name="sync_header">Permisos</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Preferencias</string>
+    <string name="reply_title">Versión 3.0 2021</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Activar Notificaciones</string>
+    <string name="Off">No</string>
+    <string name="on">Si</string>
+    <string name="attachment_title">Activar Sonido</string>
+    <string name="No">No</string>
+    <string name="Si">Si</string>
+    <string name="home">Home</string>
+    <string name="destinos">Destinos</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Backpacker</string>
+    <string name="nav_header_subtitle">Versión 3.1</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_lista">Destinos</string>
+    <string name="menu_preferencias">Preferencias</string>
+    <string name="todo">TODO</string>
 </resources>

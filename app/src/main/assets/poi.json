@@ -1,20 +1,3 @@
 [
-  {
-    "poi_name": "Guatapé",
-    "poi_description": "Sitio turístico colombiano",
-    "poi_rating": "5",
-    "poi_image": "R.drawable.guatape_poi"
-  },
-  {
-    "poi_name": "Santa Rosa",
-    "poi_description": "Sitio turístico colombiano",
-    "poi_rating": "4",
-    "poi_image": "R.drawable.santa_rosa_poi"
-  },
-  {
-    "poi_name": "El Valle del Cocora",
-    "poi_description": "Sitio turístico colombiano",
-    "poi_rating": "3",
-    "poi_image": "R.drawable.cocora_poi"
-  }
+
 ]
