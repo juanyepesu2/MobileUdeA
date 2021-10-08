@@ -1,8 +1,9 @@
+ {
   "app": {
     "name": "backpacker"
   },
   "poi": [
-  {
+{
     "poi_name": "Guatapé",
     "poi_description": "Piedra del Peñol y represa de Guatapé, Antioquia - Colombia",
     "poi_rating": "5.0",
@@ -62,7 +63,8 @@
     "poi_map": "geo:12.203765681316586, -72.14852682108979",
     "poi_places":"  • El Pilón de Azúcar.\n  • La Playa Dorada.\n  • El Ojo de Agua.\n  • Rancherías Aledañas."
   },
-  {  "poi_name": "Bahía de Solano",
+  {
+    "poi_name": "Bahía de Solano",
     "poi_description": "La puerta del pacífico - Avistamiento de ballenas, Chocó - Colombia ",
     "poi_rating": "5.0",
     "poi_image": "https://aktivo.com.co/wp-content/uploads/2021/06/avistamiento-de-ballenas-colombia-800x600-1.jpg",
@@ -74,7 +76,7 @@
     "poi_places":"  • Playas de Mecana.\n  • Playita de Los Potes.\n  • Huina\n  • El Almejal, en el corregimiento de El Valle.\n  • Parque nacional natural Ensenada de Utría."
   }
   ],
-    "comments": [
+  "comments": [
     { 
     "id": 1, 
     "body": "un museo a cielo abierto, increible para apreciar las esculturas de botero en medellin, junto con sus vendedores ambulantes y carros de bunuelos y arepas lo hace muy detacable",
@@ -109,4 +111,5 @@
   "profile": {
     "name": "jaibercom"
   }
-
+}
+ }
