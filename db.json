@@ -51,6 +51,7 @@
     "poi_map": "geo:6.556369714091349, -75.82786195232116",
     "poi_places":"  • Catedral Basílica de la Inmaculada Concepción.\n  • Iglesia de Santa Bárbara\n  • Casa del Niño Dios.\n  • La Casa Negra.\n  • La casa de las dos palmas."
   },
+  
   {
     "poi_name": "Cabo de la Vela",
     "poi_description": "La alta Guajira, cuna de los indigenas Wayú, Guajira -Colombia ",
@@ -63,8 +64,7 @@
     "poi_map": "geo:12.203765681316586, -72.14852682108979",
     "poi_places":"  • El Pilón de Azúcar.\n  • La Playa Dorada.\n  • El Ojo de Agua.\n  • Rancherías Aledañas."
   },
-  {
-    "poi_name": "Bahía de Solano",
+  {  "poi_name": "Bahía de Solano",
     "poi_description": "La puerta del pacífico - Avistamiento de ballenas, Chocó - Colombia ",
     "poi_rating": "5.0",
     "poi_image": "https://aktivo.com.co/wp-content/uploads/2021/06/avistamiento-de-ballenas-colombia-800x600-1.jpg",
@@ -75,5 +75,4 @@
     "poi_map": "geo:6.225005413818358, -77.4010338171303",
     "poi_places":"  • Playas de Mecana.\n  • Playita de Los Potes.\n  • Huina\n  • El Almejal, en el corregimiento de El Valle.\n  • Parque nacional natural Ensenada de Utría."
   }
-  ],
- }
+  ]
