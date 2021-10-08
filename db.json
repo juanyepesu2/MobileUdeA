@@ -75,5 +75,41 @@
     "poi_map": "geo:6.225005413818358, -77.4010338171303",
     "poi_places":"  • Playas de Mecana.\n  • Playita de Los Potes.\n  • Huina\n  • El Almejal, en el corregimiento de El Valle.\n  • Parque nacional natural Ensenada de Utría."
   }
-  ]
+  ],
+    "comments": [
+    { 
+    "id": 1, 
+    "body": "un museo a cielo abierto, increible para apreciar las esculturas de botero en medellin, junto con sus vendedores ambulantes y carros de bunuelos y arepas lo hace muy detacable",
+    "qualification": 5,
+    "poiId": 1 
+    },
+    { 
+      "id": 2, 
+      "body": "Ubicado en el centro donde encontramos estas hermosas esculturas y además otras atracciones como artistas callejeros... Cualquier día es bueno para hacer esta visita... Muy recomendable para combinar con otros tour y recorridas !", 
+      "qualification": 4,
+      "poiId": 1 
+    },
+    { 
+      "id": 3, 
+      "body": "El pueblito paisa es una representacion de pueblo tipico antioqueño y esta alli para recordarnos una hermosa epoca y lo bonita que era la arquitectura colonial", 
+      "qualification": 5,
+      "poiId": 2 
+    }
+  ],
+  "users": [
+    { 
+      "id": 1, 
+      "user": "pepito",
+      "password": "1234"
+    },
+    {
+      "id": 2, 
+      "user": "juanito",
+      "password": "1234"
+    }
+  ],
+  "profile": {
+    "name": "jaibercom"
+  }
 }
+ }
