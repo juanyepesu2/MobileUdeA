@@ -10,4 +10,5 @@ data class Poi(
     val poi_localization: String,
     val poi_temperature: String,
     val poi_places: String,
+    val poi_map: String
 )

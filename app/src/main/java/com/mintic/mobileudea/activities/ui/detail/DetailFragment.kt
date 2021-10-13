@@ -1,5 +1,7 @@
 package com.mintic.mobileudea.activities.ui.detail
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,6 +31,7 @@ class DetailFragment : Fragment() {
     private lateinit var placesView: TextView
     private lateinit var miimageView: ImageView
     private lateinit var MiImagen: String
+    private lateinit var MiMapa: String
     var estadoboton: Boolean = true
 
     override fun onCreateView(
@@ -42,7 +45,7 @@ class DetailFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_detail, container, false)
 
         view.findViewById<Button>(R.id.button_ver_mas).setOnClickListener {
-            if (estadoboton == true) {
+            if (estadoboton) {
                 view.findViewById<Button>(R.id.button_ver_mas).text = ("Leer Menos")
                 view.findViewById<TextView>(R.id.description2_POIs).isVisible = true
                 estadoboton = false
@@ -56,6 +59,15 @@ class DetailFragment : Fragment() {
             Navigation.findNavController(view)
                 .navigate(R.id.action_detailFragment4_to_poiListFragment)
         }
+
+        view.findViewById<Button>(R.id.button_map).setOnClickListener {
+            val gmmIntentUri = Uri.parse(MiMapa)
+            val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+            mapIntent.setPackage("com.google.android.apps.maps")
+            startActivity(mapIntent)
+
+        }
+
         return view
     }
 
@@ -68,6 +80,8 @@ class DetailFragment : Fragment() {
         temperatureView = view.findViewById(R.id.temperature_value)
         placesView = view.findViewById(R.id.places_interest)
         miimageView = view.findViewById(R.id.image_POIs)
+
+
         model = ViewModelProvider(requireActivity()).get(PoiViewModel::class.java)
         observeLiveData()
     }
@@ -87,6 +101,7 @@ class DetailFragment : Fragment() {
                 .error(R.mipmap.ic_launcher_round)
                 .resize(3500, 1400)
                 .into(miimageView)
+            MiMapa = poi.poi_map
         })
     }
 }

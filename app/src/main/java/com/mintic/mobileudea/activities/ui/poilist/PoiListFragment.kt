@@ -79,7 +79,9 @@ class PoiListFragment : Fragment() {
                     poiJson.getString("poi_description2"),
                     poiJson.getString("poi_localization"),
                     poiJson.getString("poi_temperature"),
-                    poiJson.getString("poi_places")
+                    poiJson.getString("poi_places"),
+                    poiJson.getString("poi_map")
+
                 )
                 mPoi.add(poi)
             }
