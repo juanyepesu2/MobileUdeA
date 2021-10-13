@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.mintic.mobileudea"
-        minSdk 21
+        minSdk 20
         targetSdk 31
         versionCode 1
         versionName "1.0"
