@@ -1,7 +1,7 @@
 {
   "poi": [
     {
-      "poi_name": "Guatapé-prueba",
+      "poi_name": "Guatapé",
       "poi_description": "Piedra del Peñol y represa de Guatapé, Antioquia - Colombia",
       "poi_rating": "5.0",
       "poi_image": "https://media.wsimag.com/attachments/49319d1f2192568285d62eecacfe806991e59cee/store/fill/1090/613/8a34ea8b6a83a846881e90dcfdcceb81cb7d65b7aed60a1f0bae1c45deba/La-Piedra-del-Penon-de-Guatape-al-fondo.jpg",
@@ -13,7 +13,7 @@
       "poi_places": "  • Iglesia Nuestra Señora del Carmen.\n  • Capilla de Nuestra Señora de Santa Ana.\n  • Monasterio de los Monjes Benedictinos.\n  • Museo Histórico Comunitario.\n  • Calle del Recuerdo.\n  • Museo del Zócalo.\n  • Piedra del Peñol o Peñón de Guatapé.\n  • Parque recreativo la Culebra.\n  • Parque Místico Guatapé.\n  • Malecón - Navegación y pesca en la represa."
     },
     {
-      "poi_name": "Santa Rosa - prueba",
+      "poi_name": "Santa Rosa",
       "poi_description": "Termales de Santa Rosa de cabal, Risaralda -Colombia ",
       "poi_rating": "1.0",
       "poi_image": "https://termales.com.co/wp-content/uploads/2021/04/conoce-mas-home.jpg",
