@@ -35,8 +35,8 @@ data class PoiModel(
     val poimap: String,
 
     // Con Json en la App y no externa
-    /*data class PoiModel(
-    val poi_name: String,
+
+/*    val poi_name: String,
     val poi_description: String,
     val poi_rating: String,
     val poi_image: String,

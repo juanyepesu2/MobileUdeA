@@ -16,11 +16,12 @@ class PoiAdapter(
     private var mPoi: MutableList<PoiModel>,
     private val onClick: (PoiModel) -> Unit,
 
+
     ) : RecyclerView.Adapter<PoiAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.poi_list, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.fragment_poi_list, parent, false)
         return ViewHolder(view)
     }
 
@@ -45,6 +46,7 @@ class PoiAdapter(
         var poi_imagecity: ImageView = itemView.findViewById(R.id.poi_image)
         var poi_ratingBar: RatingBar = itemView.findViewById(R.id.ratingBar)
 
+
         private var currentPoi: PoiModel? = null
 
         init {
@@ -64,6 +66,7 @@ class PoiAdapter(
             poi_ratingBar.rating = (point.poirating.toFloat() - 1) / 5
         }
     }
+
 
     /// versión original
     /*private val mPoi: ArrayList<PoiModel>,

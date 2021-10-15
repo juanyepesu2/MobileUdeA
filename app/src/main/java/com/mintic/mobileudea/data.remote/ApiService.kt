@@ -10,6 +10,6 @@ interface ApiService {
    suspend fun requestPoi(): List<PoiModel>
 
    //@GET("juanyepesu2/MobileUdeA/")
-   //suspend fun requestPoi(@Path(value = "poi") name: String): PoiModel
+   //suspend fun requestPoi(@Path(value = "poi") users: String): User
 
 }

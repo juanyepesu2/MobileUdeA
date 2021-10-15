@@ -8,7 +8,7 @@
         android:id="@+id/poiListFragment"
         android:name="com.mintic.mobileudea.activities.ui.poilist.PoiListFragment"
         android:label="fragment_poi_list"
-        tools:layout="@layout/fragment_poi_list">
+        tools:layout="@layout/poi_list">
         <action
             android:id="@+id/action_poiListFragment_to_detailFragment4"
             app:destination="@id/detailFragment"

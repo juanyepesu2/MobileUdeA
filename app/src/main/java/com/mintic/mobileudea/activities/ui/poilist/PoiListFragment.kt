@@ -10,12 +10,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.mintic.mobileudea.R
+import com.mintic.mobileudea.R.id.poi_list
 import com.mintic.mobileudea.adapter.PoiAdapter
 import com.mintic.mobileudea.model.PoiModel
 import com.mintic.mobileudea.viewmodel.PoiViewModel
-import org.json.JSONArray
-import org.json.JSONException
-import java.io.IOException
 
 
 class PoiListFragment : Fragment() {
@@ -30,11 +28,11 @@ class PoiListFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_poi_list, container, false)
+        return inflater.inflate(R.layout.poi_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        recycler = view.findViewById(R.id.poi_list)
+        recycler = view.findViewById(poi_list)
         super.onViewCreated(view, savedInstanceState)
         model = ViewModelProvider(this).get(PoiViewModel::class.java)
         model.poiLiveData.observe(viewLifecycleOwner, Observer {
@@ -55,8 +53,7 @@ class PoiListFragment : Fragment() {
 
         mAdapter = PoiAdapter(mPoi) { poi ->
             poiOnClick(poi)
-        }
-
+           }
         recycler.adapter = mAdapter
     }
 
@@ -108,7 +105,7 @@ class PoiListFragment : Fragment() {
  }*/
 
  companion object {
-     private val TAG = PoiListFragment::class.java.simpleName
+     val TAG = PoiListFragment::class.java.simpleName
  }
 }
 

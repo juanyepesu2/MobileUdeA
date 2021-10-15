@@ -15,11 +15,13 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.mintic.mobileudea.R
 import com.mintic.mobileudea.activities.ui.poilist.PoiListFragment
+import com.mintic.mobileudea.adapter.DetailAdapter
 import com.mintic.mobileudea.adapter.PoiAdapter
-import com.mintic.mobileudea.databinding.FragmentDetailBinding
 import com.mintic.mobileudea.model.PoiModel
 import com.mintic.mobileudea.viewmodel.PoiViewModel
 import com.squareup.picasso.Picasso
@@ -39,6 +41,9 @@ class DetailFragment : Fragment() {
     private lateinit var MiMapa: String
     private lateinit var poi: PoiModel
     var estadoboton: Boolean = true
+    private lateinit var mPoi: MutableList<PoiModel>
+    private lateinit var recycler: RecyclerView
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -74,8 +79,9 @@ class DetailFragment : Fragment() {
         return view
     }
 
+    /*
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
+        super.onViewCreated(view, savedInstanceState)
         nameView = view.findViewById(R.id.name_POIs)
         intro1View = view.findViewById(R.id.description1_POIs)
         intro2View = view.findViewById(R.id.description2_POIs)
@@ -83,33 +89,14 @@ class DetailFragment : Fragment() {
         temperatureView = view.findViewById(R.id.temperature_value)
         placesView = view.findViewById(R.id.places_interest)
         miimageView = view.findViewById(R.id.image_POIs)
-
-        super.onViewCreated(view, savedInstanceState)
-        model = ViewModelProvider(this).get(PoiViewModel::class.java)
-        model.poiLiveData.observe(viewLifecycleOwner, Observer {
-/*            nameView.text = poi.poiname
-            intro1View.text = poi.poiimage
-            intro2View.text = poi.poidescription2
-            intro2View.isVisible = false
-            localizationView.text = poi.poilocalization
-            temperatureView.text = poi.poitemperature
-            placesView.text = poi.poiplaces
-            MiImagen = poi.poiimage
-            Picasso.get()
-                .load(MiImagen)
-                .error(R.mipmap.ic_launcher_round)
-                .resize(3500, 1400)
-                .into(miimageView)
-            MiMapa = poi.poimap*/
-        mAdapter.updatePoiList(it)
+        model = ViewModelProvider(requireActivity()).get(PoiViewModel::class.java)
         observeLiveData()
-        })
     }
 
     private fun observeLiveData() {
         model.getSelected().observe(viewLifecycleOwner, { poi ->
             nameView.text = poi.poiname
-            intro1View.text = poi.poiimage
+            intro1View.text = poi.poidescription1
             intro2View.text = poi.poidescription2
             intro2View.isVisible = false
             localizationView.text = poi.poilocalization
@@ -121,8 +108,28 @@ class DetailFragment : Fragment() {
                 .error(R.mipmap.ic_launcher_round)
                 .resize(3500, 1400)
                 .into(miimageView)
-            MiMapa = poi.poimap
         })
     }
+}
+*/
+
+
+//*************************************************************
+
+/*    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        recycler = view.findViewById(R.id.detail_list)
+        super.onViewCreated(view, savedInstanceState)
+        model = ViewModelProvider(this).get(PoiViewModel::class.java)
+        model.poiLiveData.observe(viewLifecycleOwner, Observer {
+        mAdapter.updatePoiList(it)
+        })
+        setupRecyclerView()
+    }
+
+    private fun setupRecyclerView() {
+  *//*      mPoi = arrayListOf()
+        //mAdapter = DetailAdapter(mPoi)
+        recycler.adapter = mAdapter*//*
+    }*/
 }
 
