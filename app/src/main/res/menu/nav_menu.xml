@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item
-    android:id="@+id/poi_list"
-    android:icon="@drawable/ic_baseline_list_24"
-    android:title="POI List"
-    ></item>
-</menu>
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/poiListFragment"
+        android:title="@string/destinos"
+        android:icon="@drawable/ic_baseline_list_24"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="@string/preferencias"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+
+    </menu>
+
+
+
+<!--
+<group android:checkableBehavior="single">
+</group>-->

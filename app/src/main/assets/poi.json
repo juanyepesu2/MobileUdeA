@@ -7,7 +7,11 @@
     "poi_description1": "Guatapé es un municipio de Colombia, localizado en la subregión Oriente del departamento de Antioquia. Se encuentra a 79 kilómetros de la ciudad de Medellín. El municipio posee una extensión de 76 Km2. Es conocido como el Paraíso turístico de Antioquia y Pueblo de Zócalos, también es conocido como el Embalse Peñol-Guatapé, el mayor de Colombia.",
     "poi_description2": "Origen del nombre: Fue llamado así en honor al cacique Guatapé. Las fachadas de sus casas son coloridas, adornadas con tradicionales zócalos. El Parque Principal es amplio e invita a caminar, el malecón ofrece, además de una variada oferta gastronómica, una apacible vista sobre el embalse y el Peñón de Guatapé que le da una de las mayores atracciones a este lugar: un pueblo entre montañas a orillas de un pequeño mar.",
     "poi_localization": "Colombia, departamento de Antioquia",
+<<<<<<< HEAD
     "poi_temperature": "23°C en promedio.",
+=======
+    "poi_temperature": "24°C en promedio.",
+>>>>>>> fix_correccion_navbar
     "poi_map": "geo:6.236563707444624, -75.15689719658565",
     "poi_places": "  • Iglesia Nuestra Señora del Carmen.\n  • Capilla de Nuestra Señora de Santa Ana.\n  • Monasterio de los Monjes Benedictinos.\n  • Museo Histórico Comunitario.\n  • Calle del Recuerdo.\n  • Museo del Zócalo.\n  • Piedra del Peñol o Peñón de Guatapé.\n  • Parque recreativo la Culebra.\n  • Parque Místico Guatapé.\n  • Malecón - Navegación y pesca en la represa."
   },
@@ -49,7 +53,7 @@
   },
   {
     "poi_name": "Cabo de la Vela",
-    "poi_description": "La alta Guajira, cuna de los Wayú, Guajira -Colombia ",
+    "poi_description": "La alta Guajira, cuna de los indígenas Wayú, Guajira -Colombia ",
     "poi_rating": "4.0",
     "poi_image": "https://www.uniquecolombia.com/wp-content/uploads/2011/10/CABODE-LA-VELA.jpg",
     "poi_description1": "El cabo de la Vela es un accidente costero en el sur del mar Caribe; se encuentra situado en el extremo norte de Suramérica, específicamente en la península de la Guajira en Colombia.",
