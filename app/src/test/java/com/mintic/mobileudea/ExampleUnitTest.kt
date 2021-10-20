@@ -1,6 +1,5 @@
 package com.mintic.mobileudea
 
-import com.mintic.mobileudea.model.Poi
 import org.junit.Test
 
 import org.junit.Assert.*
