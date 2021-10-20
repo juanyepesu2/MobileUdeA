@@ -19,9 +19,9 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.mintic.mobileudea.activities.ui.detail.DetailFragment"
+        android:name="com.mintic.mobileudea.activities.ui.detail.PoiDetailFragment"
         android:label="DetailFragment"
-        tools:layout="@layout/fragment_detail">
+        tools:layout="@layout/fragment_poi_detail_list">
         <action
             android:id="@+id/action_detailFragment4_to_poiListFragment"
             app:destination="@id/poiListFragment" />

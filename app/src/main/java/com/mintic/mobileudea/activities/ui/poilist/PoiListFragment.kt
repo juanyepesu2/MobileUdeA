@@ -38,7 +38,7 @@ class PoiListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         model = ViewModelProvider(this).get(PoiViewModel::class.java)
         model.poiLiveData.observe(viewLifecycleOwner, Observer {
-        mAdapter.updatePoiList(it)
+        mAdapter.updatePoi(it)
         })
         setupRecyclerView()
         //generatePois()
@@ -53,16 +53,18 @@ class PoiListFragment : Fragment() {
             )
         )
 
-        mAdapter = PoiAdapter(mPoi) { poi ->
-            poiOnClick(poi)
+        mAdapter = PoiAdapter(mPoi) { poi -> poiOnClick(poi)
         }
 
         recycler.adapter = mAdapter
     }
 
     private fun poiOnClick(poi: PoiModel) {
-        Log.d(TAG, "Click on: $poi")
+        Log.d(TAG, "Click on: $poi y el indice es: ${mPoi.indexOf(poi)}")
+        val args = Bundle()
+        args.putInt("SelectedPoi",mPoi.indexOf(poi))
         model.select(poi)
+
         findNavController().navigate(R.id.action_poiListFragment_to_detailFragment4)
     }
 

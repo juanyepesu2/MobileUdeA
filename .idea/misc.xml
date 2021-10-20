@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/detail.xml" value="0.18229166666666666" />
-        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/fragment_detail.xml" value="0.18229166666666666" />
-        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/fragment_poi_list.xml" value="0.18229166666666666" />
-        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/poi_list.xml" value="0.18229166666666666" />
+        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/fragment_detail.xml" value="0.1322463768115942" />
+        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/fragment_poi_list.xml" value="0.2223731884057971" />
+        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/poi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/poi_detail.xml" value="0.33" />
+        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/poi_detail2.xml" value="0.15443840579710144" />
+        <entry key="..\:/Educacion 2.0/MobileUdeA/app/src/main/res/layout/poi_list.xml" value="0.2223731884057971" />
         <entry key="..\:/TIC2022 - Ciclo 4/Apps/MobileUdeA-Sprint_2/app/src/main/res/drawable/button_press.xml" value="0.1" />
         <entry key="..\:/TIC2022 - Ciclo 4/Apps/MobileUdeA-Sprint_2/app/src/main/res/drawable/rounded_button.xml" value="0.1" />
         <entry key="..\:/TIC2022 - Ciclo 4/Apps/MobileUdeA-Sprint_2/app/src/main/res/layout/activity_main.xml" value="0.22" />

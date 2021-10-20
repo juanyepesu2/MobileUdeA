@@ -30,7 +30,7 @@ class PoiViewModel : ViewModel() {
     private lateinit var temperatureView: TextView
     private lateinit var placesView: TextView
 
-    private val selected = MutableLiveData<PoiModel>()
+    val selected = MutableLiveData<PoiModel>()
     fun getSelected(): LiveData<PoiModel> = selected
     fun select (poi: PoiModel) {
         selected.value = poi

@@ -42,13 +42,14 @@ class PoiDetailViewModel : ViewModel() {
     var poiDetailLiveData: LiveData<List<PoiDetailModel>> = poiDetail
 
     init {
-        getPoi()
+        getPoiDetail()
 
     }
 
-    fun getPoi() {
+    fun getPoiDetail() {
         viewModelScope.launch {
             poiDetail.value = requestPoiDetail()
+
             // observeLiveData()
         }
     }

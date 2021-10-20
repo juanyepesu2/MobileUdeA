@@ -10,18 +10,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.mintic.mobileudea.R
 import com.mintic.mobileudea.model.PoiDetailModel
 import com.mintic.mobileudea.model.PoiModel
+import com.mintic.mobileudea.viewmodel.PoiViewModel
 import com.squareup.picasso.Picasso
 
 class PoiDetailAdapter(
 
     private var mPoiDetail: MutableList<PoiDetailModel>,
 
+    private val onClick: (PoiDetailModel) -> Unit,
 
     ) : RecyclerView.Adapter<PoiDetailAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.detail, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.poi_detail, parent, false)
         return ViewHolder(view)
     }
 
@@ -30,37 +32,44 @@ class PoiDetailAdapter(
     }
 
     override fun getItemCount(): Int {
-        return 1
+        print("El tamaño de la lista es:"+mPoiDetail.size.toString())
+        return mPoiDetail.size
+
+
     }
 
-    fun updatePoiDetail(pois: List<PoiDetailModel>?) {
+    fun updatePoiDetail(poiDetails: List<PoiDetailModel>?,position: Int) {
         this.mPoiDetail.clear()
-        pois?.let { this.mPoiDetail.addAll(it) }
+        val num = arrayOf<PoiDetailModel>(poiDetails!!.elementAt(1))
+        poiDetails?.let { this.mPoiDetail.addAll(num) }
         notifyDataSetChanged()
+
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var poi_nameLabel: TextView = itemView.findViewById(R.id.textview_poi_name)
-        var poi_ratingLabel: TextView = itemView.findViewById(R.id.textview_poi_rating)
         var poi_descriptionLabel: TextView = itemView.findViewById(R.id.textview_poi_description)
         var poi_imagecity: ImageView = itemView.findViewById(R.id.poi_image)
-        var poi_ratingBar: RatingBar = itemView.findViewById(R.id.ratingBar)
 
-        private var currentPoi: PoiModel? = null
+        private var currentPoi: PoiDetailModel? = null
 
         init {
             itemView.setOnClickListener {
                 currentPoi?.let {
-
+                    onClick(it)
                 }
             }
         }
 
+
         fun bind(point: PoiDetailModel) {
+
+            currentPoi = point
             poi_nameLabel.text = point.poiname
             poi_descriptionLabel.text = point.poidescripcion
-            poi_ratingLabel.text = point.poirating
             Picasso.get().load(point.poiimage).into(poi_imagecity)
-            poi_ratingBar.rating = (point.poirating.toFloat() - 1) / 5
+
         }
-    }}
+    }
+
+    }

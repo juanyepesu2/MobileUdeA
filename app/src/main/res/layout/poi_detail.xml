@@ -16,10 +16,10 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".activities.ui.detail.DetailFragment">
+            tools:context=".activities.ui.detail.PoiDetailFragment">
 
             <ImageView
-                android:id="@+id/image_POIs"
+                android:id="@+id/poi_image"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="8dp"
@@ -27,25 +27,24 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/guatape2" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/name_POIs"
+                android:id="@+id/textview_poi_name"
                 android:layout_width="210dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif-black"
-                android:text="@string/name_pois"
+                android:text="Destino"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/description1_POIs"
+                app:layout_constraintBottom_toTopOf="@+id/textview_poi_description"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_POIs" />
+                app:layout_constraintTop_toBottomOf="@+id/poi_image" />
 
             <TextView
-                android:id="@+id/description1_POIs"
+                android:id="@+id/textview_poi_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -56,7 +55,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/name_POIs" />
+                app:layout_constraintTop_toBottomOf="@+id/textview_poi_name" />
 
             <TextView
                 android:id="@+id/description2_POIs"
@@ -71,7 +70,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description1_POIs" />
+                app:layout_constraintTop_toBottomOf="@+id/textview_poi_description" />
 
             <Button
                 android:id="@+id/button_ver_mas"
@@ -97,7 +96,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/button_ver_mas" />
 
             <TextView
-                android:id="@+id/location_value"
+                android:id="@+id/textview_poi_detail_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
@@ -117,7 +116,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/location_key" />
 
             <TextView
-                android:id="@+id/temperature_value"
+                android:id="@+id/textview_poi_detail_temperature"
                 android:layout_width="132dp"
                 android:layout_height="22dp"
                 android:layout_marginStart="8dp"
@@ -125,7 +124,7 @@
                 android:text="@string/degrees"
                 app:layout_constraintLeft_toRightOf="@+id/temperature_key"
                 app:layout_constraintStart_toEndOf="@+id/temperature_key"
-                app:layout_constraintTop_toBottomOf="@+id/location_value" />
+                app:layout_constraintTop_toBottomOf="@+id/textview_poi_detail_location" />
 
             <Button
                 android:id="@+id/button_map"
@@ -135,7 +134,7 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/map"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/places_interest" />
+                app:layout_constraintTop_toBottomOf="@+id/textview_poi_detail_interest_sites" />
 
             <Button
                 android:id="@+id/button_info"
@@ -145,7 +144,7 @@
                 android:layout_marginEnd="50dp"
                 android:text="@string/info"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/places_interest" />
+                app:layout_constraintTop_toBottomOf="@+id/textview_poi_detail_interest_sites" />
 
             <TextView
                 android:id="@+id/places_key"
@@ -162,7 +161,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/temperature_key" />
 
             <TextView
-                android:id="@+id/places_interest"
+                android:id="@+id/textview_poi_detail_interest_sites"
                 android:layout_width="328dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"

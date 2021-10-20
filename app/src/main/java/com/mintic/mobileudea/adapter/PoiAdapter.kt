@@ -20,7 +20,7 @@ class PoiAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.poi_list, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.poi, parent, false)
         return ViewHolder(view)
     }
 
@@ -32,7 +32,7 @@ class PoiAdapter(
         return mPoi.size
     }
 
-    fun updatePoiList(pois: List<PoiModel>?) {
+    fun updatePoi(pois: List<PoiModel>?) {
         this.mPoi.clear()
         pois?.let { this.mPoi.addAll(it) }
         notifyDataSetChanged()

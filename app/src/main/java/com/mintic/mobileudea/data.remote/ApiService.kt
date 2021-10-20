@@ -8,8 +8,14 @@ import retrofit2.http.Path
 interface ApiService {
 
    @GET("poi")
-   suspend fun requestPoi(): List<PoiModel>
    suspend fun requestPoiDetail(): List<PoiDetailModel>
+   @GET("poi")
+   suspend fun requestPoi(): List<PoiModel>
+
+
+
+
+
 
    //@GET("juanyepesu2/MobileUdeA/")
    //suspend fun requestPoi(@Path(value = "poi") name: String): PoiModel
